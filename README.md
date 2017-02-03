@@ -14,7 +14,7 @@ Execute repetitive tasks, save time, and optimize your development process with 
 
 # Manage python unittest with Jenkins in 9 Steps.
 
-1. you need to install jenkins and clone the repository. (install for ubuntu below)
+- you need to install jenkins and clone the repository. (install for ubuntu below)
 ```bash
 wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -22,51 +22,43 @@ sudo apt-get update
 sudo apt-get install jenkins
 sudo service jenkins start
 ```
-
-2. open http://127.0.0.1:8080 and click Manage Jenkins
+- open http://127.0.0.1:8080 and click Manage Jenkins
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/manage-plugin.png"/>
 <br>
 available tab - install cobertura plugin
-
-3. go back and click New Item (to follow the example of this repository, you can type "example")
+- go back and click New Item (to follow the example of this repository, you can type "example")
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/newitem.png"/>
 <br>
-
-4. give the permission to generate the report to the workspace for Jenkins and this repository
+- give the permission to generate the report to the workspace for Jenkins and this repository
 ```bash
 sudo chmod 777 /var/lib/jenkins/workspace/example
 sudo chmod 777 ~/python-unittest-report-jenkins
 ```
-
-5. click example item - Configure.
+- click example item - Configure.
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/homeexample.png"/>
 <br>
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/examplestatus.png"/>
 <br>
-
-6. edit shell and post build and save.
+- edit shell and post build and save.
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/shell.png"/>
 <br>
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/postbuild.png"/>
 <br>
-
-7. click Build Now.
+- click Build Now.
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/examplestatus.png"/>
 <br>
-
-8. click the result(#1)
+- click the result(#1)
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/build.png"/>
 <br>
-
-9. you can finally check the coverage report and unittest report.
+- you can finally check the coverage report and unittest report.
 <br>
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/coverage-report.png"/>
 <br>

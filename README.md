@@ -1,5 +1,5 @@
 # python-unittest-report-jenkins
-### This is the example of Python Unittest &amp; Coverage management with Jenkins Continuous Integration server
+This is the example of Python Unittest &amp; Coverage management with Jenkins Continuous Integration server.
 
 <img src="https://github.com/SkyHenryk/python-unittest-report-jenkins/blob/master/doc/pic/coverage-report.png"/>
 
